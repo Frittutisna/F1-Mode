@@ -45,7 +45,7 @@ Pitting can be done manually during Dry weather or automatically during weather 
         * **Bonus:** **1s** on **Laps 1-20** of stint
 
 ## IV. Weather
-Before each race, the Script will roll a D20 three times to determine conditions. These will be repeated as long as Roll 2 does not go to the end of the race, but the first Roll 1 determines the difficulty for the entire race. When the weather changes, everyone is automatically pitted for the correct tyres (🟠 Neutral (N) for Dry). Tyre bonus/penalty mechanics are disabled during 🟢 Intermediate (I) or 🔵 Wet (W) weather, while FSC is triggered if the weather changed for the worse (from Dry or 🟢 Intermediate (I) to 🔵 Wet (W), or from Dry to 🟢 Intermediate (I)).
+Before each race, the Script will roll a D20 three times to determine conditions. These will be repeated as long as Roll 2 does not go to the end of the race, but the first Roll 1 determines the difficulty for the entire race. When the weather changes, everyone is automatically pitted for the correct tyres (🟠 Neutral (N) for Dry). Tyre bonus/penalty mechanics are disabled during 🟢 Intermediate (I) or 🔵 Wet (W) weather, while FSC is triggered if the weather changed for the worse (from Dry or 🟢 Intermediate (I) to 🔵 Wet (W), or from Dry to 🟢 Intermediate (I))
 1. **Roll 1 (Weather Type):** Visible to players:
 <table>
     <thead>
@@ -164,59 +164,56 @@ Before each race, the Script will roll a D20 three times to determine conditions
             <td style="text-align: center;">1</td>
             <td rowspan="10" style="text-align: center;">Restart<br>the race<br>with the<br>remaining<br>laps</td>
             <td style="text-align: center;">6</td>
-            <td style="text-align: center;">13</td>
-            <td style="text-align: center;">19</td>
+            <td style="text-align: center;">12</td>
+            <td style="text-align: center;">18</td>
             <td rowspan="10" style="text-align: center;">Full<br>points<br>awarded</td>
         </tr>
         <tr>
             <td style="text-align: center;">2</td>
             <td style="text-align: center;">4</td>
             <td style="text-align: center;">10</td>
-            <td style="text-align: center;">14</td>
+            <td style="text-align: center;">15</td>
         </tr>
         <tr>
             <td style="text-align: center;">3</td>
-            <td style="text-align: center;">3</td>
+            <td style="text-align: center;">2</td>
             <td style="text-align: center;">8</td>
             <td style="text-align: center;">12</td>
         </tr>
         <tr>
             <td style="text-align: center;">4</td>
-            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">1</td>
             <td style="text-align: center;">6</td>
             <td style="text-align: center;">10</td>
         </tr>
         <tr>
             <td style="text-align: center;">5</td>
-            <td style="text-align: center;">1</td>
-            <td style="text-align: center;">5</td>
+            <td rowspan="6" style="text-align: center;"></td>
+            <td style="text-align: center;">4</td>
             <td style="text-align: center;">8</td>
         </tr>
         <tr>
             <td style="text-align: center;">6</td>
-            <td rowspan="5" style="text-align: center;"></td>
-            <td style="text-align: center;">4</td>
+            <td style="text-align: center;">2</td>
             <td style="text-align: center;">6</td>
         </tr>
         <tr>
             <td style="text-align: center;">7</td>
-            <td style="text-align: center;">3</td>
+            <td style="text-align: center;">1</td>
             <td style="text-align: center;">4</td>
         </tr>
         <tr>
             <td style="text-align: center;">8</td>
+            <td rowspan="3" style="text-align: center;"></td>
             <td style="text-align: center;">2</td>
-            <td style="text-align: center;">3</td>
         </tr>
         <tr>
             <td style="text-align: center;">9</td>
             <td style="text-align: center;">1</td>
-            <td style="text-align: center;">2</td>
         </tr>
         <tr>
             <td style="text-align: center;">10</td>
             <td style="text-align: center;"></td>
-            <td style="text-align: center;">1</td>
         </tr>
     </tbody>
 </table>
