@@ -139,7 +139,7 @@ Before each race, the Script will roll a D20 three times to determine conditions
 ## V. Events
 * **Drag Reduction System (DRS):** Except on Lap 1 or under Virtual/Full Safety Car, gain a **1s bonus** for **each** of the following conditions:
     * Less than 1s behind anyone (Proximity DRS)
-    * More than 25s behind the leader (Perennial DRS)
+    * More than multiples of 25s behind the leader (Perennial DRS; 75-100s behind the leader counts as 3s, etc)
     * Directly behind the teammate (Teammate DRS)
 * **Virtual Safety Car (VSC):** Triggered if everyone is **correct**. **Ignore the song** for everything except Tyre Age. Roll a D20 each lap to exit VSC within 5 laps: 1-10 ends it, 20 upgrades it to an VSC
 * **Full Safety Car (FSC):** Triggered if everyone is **wrong** (Wrong/No Answers), or if the weather changed for the **worse** (from Dry or 🟢 Intermediate (I) to 🔵 Wet (W), or from Dry to 🟢 Intermediate (I)). **Reset the Tally** so that P2 is 0.5s behind P1, P3 is 0.5s behind P2, etc. The first race occurrence awards **Sprint Points**. Roll a D20 each lap after the first FSC lap to exit FSC within 5 laps (including potential preceding VSC): 1-5 ends it
