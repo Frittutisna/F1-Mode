@@ -262,7 +262,7 @@ After each lap, a [Dashboard](https://github.com/Frittutisna/F1-Mode/blob/main/D
 ## VIII. Calendar
 This table shows the provisional calendar for the inaugural 2026 season. Preseason (PR) races don't count towards the standings, while Triple (T) races count as three entries on the standings, and Double (D) races count as two
 1. **Expected Stint Count (eSC):** Expected amount of 3-roll sets (including one done before race start) for each race
-2. **Stable Race State (SRS):** Expected share of laps in each water for each race
+2. **Stable Race State (SRS):** Expected share of laps in each weather for each race
 3. **Expected Weather Change (eWC):** Expected amount of weather changes for each race
 4. **Expected Worsening Weather Change (eWWC):** Expected amount of worsening weather changes for each race, triggering FSC
 <table>
