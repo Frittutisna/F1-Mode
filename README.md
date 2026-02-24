@@ -3,7 +3,7 @@
 ## I. Setup
 1. **Grid:** 10–20 players in teams of 2 playing separately
 2. **Format:** 1 annual season @ 20 rounds (races) @ ~50-70 songs (laps) @ 20 seconds ≈ ~60-75 minutes
-3. **Difficulty:** Applied if rolled as the first Roll 2
+3. **Difficulty:** Applied if rolled as the first Roll 1
     * **Dry:** 60-100 Random
     * 🟢 **Intermediate (I):** 50-80 Random
     * 🔵 **Wet (W):** 40-60 Random
@@ -141,7 +141,7 @@ Before each race, the Script will roll a set of three D20s to determine conditio
     * Less than 1s behind anyone (Proximity DRS)
     * More than multiples of 25s behind the leader (Perennial DRS; 75-100s behind the leader counts as 3s, etc)
     * Directly behind the teammate (Teammate DRS)
-* **Virtual Safety Car (VSC):** Triggered if everyone is **correct**. **Ignore the song** for everything except Tyre Age. Roll a D20 each lap to exit VSC within 5 laps: 1-10 ends it, 20 upgrades it to an VSC
+* **Virtual Safety Car (VSC):** Triggered if everyone is **correct**. **Ignore the song** for everything except Tyre Age. Roll a D20 each lap to exit VSC within 5 laps: 1-10 ends it, 20 upgrades it to an FSC
 * **Full Safety Car (FSC):** Triggered if everyone is **wrong** (Wrong/No Answers), or if the weather changed for the **worse** (from Dry or 🟢 Intermediate (I) to 🔵 Wet (W), or from Dry to 🟢 Intermediate (I)). **Reset the Tally** so that P2 is 0.5s behind P1, P3 is 0.5s behind P2, etc. The first race occurrence awards **Sprint Points**. Roll a D20 each lap after the first FSC lap to exit FSC within 5 laps (including potential preceding VSC): 1-5 ends it
 * **Did Not Finish (DNF):** Triggered if a **non-Lobby Host disconnected** and could not return within **5 minutes**. They are out of the race, though they keep their Sprint Points and/or Fastest Lap points, if any
 * **Red Flag:** Triggered if the **Lobby Host disconnected**. They must keep track of the newest Dashboard link after each lap, then award the following Race Points based on laps elapsed before the Red Flag. Fastest Lap and Sprint (if applicable) Points are unaffected by the Red Flag.
