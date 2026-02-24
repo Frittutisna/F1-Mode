@@ -1,4 +1,4 @@
-# F1 Mode v0-concept.0.1
+# F1 Mode v0-concept.0.2
 
 ## I. Setup
 1. **Grid:** 10–20 players in teams of 2 playing separately
@@ -45,26 +45,26 @@ Pitting can be done manually during Dry weather or automatically during weather 
         * **Bonus:** **1s** on **Laps 1-20** of stint
 
 ## IV. Weather
-Before each race, the Script will roll a set of three D20s to determine conditions. These will be repeated as long as Roll 2 does not go to the end of the race, but the first Roll 1 determines the difficulty for the entire race. When the weather changes, everyone is automatically pitted for the correct tyres (🟠 Neutral (N) for Dry). Tyre bonus/penalty mechanics are disabled during 🟢 Intermediate (I) or 🔵 Wet (W) weather, while FSC is triggered if the weather changed for the worse (from Dry or 🟢 Intermediate (I) to 🔵 Wet (W), or from Dry to 🟢 Intermediate (I))
+Before each race, the Script will roll a set of three D20s to determine conditions. These will be repeated as long as Roll 2 does not go to the end of the race, but the first Roll 1 determines the difficulty for the entire race. When the weather changes, everyone is automatically pitted for the correct tyres (🟠 Neutral (N) for Dry). Tyre bonus/penalty mechanics are disabled during 🟢 Intermediate (I) or 🔵 Wet (W) weather, while FSC is triggered if the weather worsened (from Dry or 🟢 Intermediate (I) to 🔵 Wet (W), or from Dry to 🟢 Intermediate (I))
 1. **Roll 1 (Weather Type):** Visible to players:
 <table>
     <thead>
         <tr>
             <th rowspan="2" style="text-align: center;"></th>
-            <th style="text-align: center;">Weather Profile</th>
+            <th style="text-align: center;">Weather<br>Profile</th>
             <th colspan="3" style="text-align: center;">Stable (0)</th>
             <th colspan="3" style="text-align: center;">Standard (1)</th>
             <th colspan="3" style="text-align: center;">Inclement (2)</th>
         </tr>
         <tr>
-            <th style="text-align: center;">Current Weather</th>
-            <th style="text-align: center;">None/Dry</th>
+            <th style="text-align: center;">Current<br>Weather</th>
+            <th style="text-align: center;">None<br>or Dry</th>
             <th style="text-align: center;">Intermediate</th>
             <th style="text-align: center;">Wet</th>
-            <th style="text-align: center;">None/Dry</th>
+            <th style="text-align: center;">None<br>or Dry</th>
             <th style="text-align: center;">Intermediate</th>
             <th style="text-align: center;">Wet</th>
-            <th style="text-align: center;">None/Dry</th>
+            <th style="text-align: center;">None<br>or Dry</th>
             <th style="text-align: center;">Intermediate</th>
             <th style="text-align: center;">Wet</th>
         </tr>
@@ -261,8 +261,8 @@ After each lap, a [Dashboard](https://github.com/Frittutisna/F1-Mode/blob/main/D
 
 ## VIII. Calendar
 This table shows the provisional calendar for the inaugural 2026 season. Preseason (PR) races don't count towards the standings, while Triple (T) races count as three entries on the standings, and Double (D) races count as two
-1. **Expected Stint Count (eSC):** Expected amount of 3-roll sets (including one done before race start) for each race
-2. **Stable Race State (SRS):** Expected share of laps in each weather for each race
+1. **Expected Roll Count (eRC):** Expected amount of 3-roll sets (including one done before race start) for each race
+2. **Steady Race State (SRS):** Expected share of laps in each weather for each race
 3. **Expected Weather Change (eWC):** Expected amount of weather changes for each race
 4. **Expected Worsening Weather Change (eWWC):** Expected amount of worsening weather changes for each race, triggering FSC
 <table>
@@ -273,8 +273,8 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <th rowspan="2" style="text-align: center;">Date</th>
             <th rowspan="2" style="text-align: center;">Laps</th>
             <th rowspan="2" style="text-align: center;">Profile</th>
-            <th rowspan="2" style="text-align: center;">eSC</th>
-            <th colspan="3" style="text-align: center;">SRS</th>
+            <th rowspan="2" style="text-align: center;">eRC</th>
+            <th colspan="3" style="text-align: center;">Steady Race State</th>
             <th rowspan="2" style="text-align: center;">eWC</th>
             <th rowspan="2" style="text-align: center;">eWWC</th>
         </tr>
@@ -596,6 +596,918 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">0.36%</td>
             <td style="text-align: center;">0.37</td>
             <td style="text-align: center;">0.20</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th rowspan="2" style="text-align: center;">Round</th>
+            <th rowspan="2" style="text-align: center;">Circuit</th>
+            <th rowspan="2" style="text-align: center;">Date</th>
+            <th rowspan="2" style="text-align: center;">Laps</th>
+            <th rowspan="2" style="text-align: center;">Profile</th>
+            <th rowspan="2" style="text-align: center;">eRC</th>
+            <th colspan="6" style="text-align: center;">RC Probability</th>
+        </tr>
+        <tr>
+            <th style="text-align: center;">3</th>
+            <th style="text-align: center;">4</th>
+            <th style="text-align: center;">5</th>
+            <th style="text-align: center;">6</th>
+            <th style="text-align: center;">7</th>
+            <th style="text-align: center;">8</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: center;">PR1</td>
+            <td style="text-align: center;">Albert Park</td>
+            <td style="text-align: center;">260607</td>
+            <td style="text-align: center;">58</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">5.05</td>
+            <td style="text-align: center;">0.00%</td>
+            <td style="text-align: center;">8.87%</td>
+            <td style="text-align: center;">66.86%</td>
+            <td style="text-align: center;">24.27%</td>
+            <td colspan="2" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">PR2</td>
+            <td style="text-align: center;">Shanghai</td>
+            <td style="text-align: center;">260614</td>
+            <td style="text-align: center;">56</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">4.89</td>
+            <td style="text-align: center;">0.01%</td>
+            <td style="text-align: center;">15.63%</td>
+            <td style="text-align: center;">71.39%</td>
+            <td style="text-align: center;">12.97%</td>
+            <td colspan="2" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">PR3</td>
+            <td style="text-align: center;">Suzuka</td>
+            <td style="text-align: center;">260621</td>
+            <td style="text-align: center;">53</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">4.65</td>
+            <td style="text-align: center;">1.50%</td>
+            <td style="text-align: center;">37.67%</td>
+            <td style="text-align: center;">54.58%</td>
+            <td style="text-align: center;">6.25%</td>
+            <td colspan="2" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">PR4</td>
+            <td style="text-align: center;">Sakhir</td>
+            <td style="text-align: center;">260628</td>
+            <td style="text-align: center;">57</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">4.97</td>
+            <td style="text-align: center;">0.00%</td>
+            <td style="text-align: center;">11.91%</td>
+            <td style="text-align: center;">69.57%</td>
+            <td style="text-align: center;">18.52%</td>
+            <td colspan="2" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">Jeddah</td>
+            <td style="text-align: center;">260705</td>
+            <td style="text-align: center;">50</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">4.42</td>
+            <td style="text-align: center;">3.73%</td>
+            <td style="text-align: center;">51.85%</td>
+            <td style="text-align: center;">44.43%</td>
+            <td colspan="3" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">Miami</td>
+            <td style="text-align: center;">260712</td>
+            <td style="text-align: center;">57</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">4.97</td>
+            <td style="text-align: center;">0.00%</td>
+            <td style="text-align: center;">11.91%</td>
+            <td style="text-align: center;">69.57%</td>
+            <td style="text-align: center;">18.52%</td>
+            <td colspan="2" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">3</td>
+            <td style="text-align: center;">Montreal</td>
+            <td style="text-align: center;">260719</td>
+            <td style="text-align: center;">70</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">5.99</td>
+            <td style="text-align: center;"></td>
+            <td style="text-align: center;">0.00%</td>
+            <td style="text-align: center;">15.01%</td>
+            <td style="text-align: center;">71.07%</td>
+            <td style="text-align: center;">13.92%</td>
+            <td style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">4</td>
+            <td style="text-align: center;">Monte Carlo</td>
+            <td style="text-align: center;">260726</td>
+            <td style="text-align: center;">78</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">6.61</td>
+            <td style="text-align: center;"></td>
+            <td style="text-align: center;">0.00%</td>
+            <td style="text-align: center;">0.73%</td>
+            <td style="text-align: center;">40.70%</td>
+            <td style="text-align: center;">56.65%</td>
+            <td style="text-align: center;">1.92%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">5</td>
+            <td style="text-align: center;">Barcelona</td>
+            <td style="text-align: center;">260802</td>
+            <td style="text-align: center;">66</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">5.67</td>
+            <td style="text-align: center;"></td>
+            <td style="text-align: center;">0.14%</td>
+            <td style="text-align: center;">35.85%</td>
+            <td style="text-align: center;">60.10%</td>
+            <td style="text-align: center;">3.91%</td>
+            <td style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">6</td>
+            <td style="text-align: center;">Red Bull Ring</td>
+            <td style="text-align: center;">260809</td>
+            <td style="text-align: center;">71</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">6.07</td>
+            <td style="text-align: center;"></td>
+            <td style="text-align: center;">0.00%</td>
+            <td style="text-align: center;">10.97%</td>
+            <td style="text-align: center;">72.03%</td>
+            <td style="text-align: center;">17.00%</td>
+            <td style="text-align: center;">0.00%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">7</td>
+            <td style="text-align: center;">Silverstone</td>
+            <td style="text-align: center;">260816</td>
+            <td style="text-align: center;">52</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">4.58</td>
+            <td style="text-align: center;">2.03%</td>
+            <td style="text-align: center;">41.84%</td>
+            <td style="text-align: center;">51.44%</td>
+            <td style="text-align: center;">4.69%</td>
+            <td colspan="2" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">8</td>
+            <td style="text-align: center;">Spa</td>
+            <td style="text-align: center;">260823</td>
+            <td style="text-align: center;">44</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">3.95</td>
+            <td style="text-align: center;">19.46%</td>
+            <td style="text-align: center;">65.64%</td>
+            <td style="text-align: center;">14.90%</td>
+            <td colspan="3" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">9</td>
+            <td style="text-align: center;">Hungaroring</td>
+            <td style="text-align: center;">260906</td>
+            <td style="text-align: center;">70</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">5.99</td>
+            <td style="text-align: center;"></td>
+            <td style="text-align: center;">0.00%</td>
+            <td style="text-align: center;">15.01%</td>
+            <td style="text-align: center;">71.07%</td>
+            <td style="text-align: center;">13.92%</td>
+            <td style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">10</td>
+            <td style="text-align: center;">Zandvoort</td>
+            <td style="text-align: center;">260913</td>
+            <td style="text-align: center;">72</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">6.14</td>
+            <td style="text-align: center;"></td>
+            <td style="text-align: center;">0.00%</td>
+            <td style="text-align: center;">7.82%</td>
+            <td style="text-align: center;">71.69%</td>
+            <td style="text-align: center;">20.49%</td>
+            <td style="text-align: center;">0.00%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">11</td>
+            <td style="text-align: center;">Monza</td>
+            <td style="text-align: center;">260920</td>
+            <td style="text-align: center;">53</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">4.65</td>
+            <td style="text-align: center;">1.50%</td>
+            <td style="text-align: center;">37.67%</td>
+            <td style="text-align: center;">54.58%</td>
+            <td style="text-align: center;">6.25%</td>
+            <td colspan="2" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">12</td>
+            <td style="text-align: center;">Madring</td>
+            <td style="text-align: center;">260927</td>
+            <td style="text-align: center;">57</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">4.97</td>
+            <td style="text-align: center;">0.00%</td>
+            <td style="text-align: center;">11.91%</td>
+            <td style="text-align: center;">69.57%</td>
+            <td style="text-align: center;">18.52%</td>
+            <td colspan="2" style="text-align: center;"></td>
+        </tr>
+        <tr style="font-weight: bold;">
+            <td style="text-align: center;">T13</td>
+            <td style="text-align: center;">Mandalika</td>
+            <td style="text-align: center;">261005</td>
+            <td style="text-align: center;">60</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">5.20</td>
+            <td style="text-align: center;">0.00%</td>
+            <td style="text-align: center;">4.61%</td>
+            <td style="text-align: center;">60.20%</td>
+            <td style="text-align: center;">35.19%</td>
+            <td colspan="2" style="text-align: center;"></td>
+        </tr>
+        <tr style="font-weight: bold;">
+            <td style="text-align: center;">D14</td>
+            <td style="text-align: center;">Marina Bay</td>
+            <td style="text-align: center;">261011</td>
+            <td style="text-align: center;">62</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">5.36</td>
+            <td style="text-align: center;"></td>
+            <td style="text-align: center;">1.97%</td>
+            <td style="text-align: center;">50.84%</td>
+            <td style="text-align: center;">47.19%</td>
+            <td style="text-align: center;">0.00%</td>
+            <td style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">15</td>
+            <td style="text-align: center;">COTA</td>
+            <td style="text-align: center;">261018</td>
+            <td style="text-align: center;">56</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">4.89</td>
+            <td style="text-align: center;">0.01%</td>
+            <td style="text-align: center;">15.63%</td>
+            <td style="text-align: center;">71.39%</td>
+            <td style="text-align: center;">12.97%</td>
+            <td colspan="2" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">16</td>
+            <td style="text-align: center;">Mexico City</td>
+            <td style="text-align: center;">261025</td>
+            <td style="text-align: center;">71</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">6.07</td>
+            <td style="text-align: center;"></td>
+            <td style="text-align: center;">0.00%</td>
+            <td style="text-align: center;">10.97%</td>
+            <td style="text-align: center;">72.03%</td>
+            <td style="text-align: center;">17.00%</td>
+            <td style="text-align: center;">0.00%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">17</td>
+            <td style="text-align: center;">Interlagos</td>
+            <td style="text-align: center;">261101</td>
+            <td style="text-align: center;">71</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">6.07</td>
+            <td style="text-align: center;"></td>
+            <td style="text-align: center;">0.00%</td>
+            <td style="text-align: center;">10.97%</td>
+            <td style="text-align: center;">72.03%</td>
+            <td style="text-align: center;">17.00%</td>
+            <td style="text-align: center;">0.00%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">18</td>
+            <td style="text-align: center;">Las Vegas</td>
+            <td style="text-align: center;">261108</td>
+            <td style="text-align: center;">50</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">4.42</td>
+            <td style="text-align: center;">3.73%</td>
+            <td style="text-align: center;">51.85%</td>
+            <td style="text-align: center;">44.43%</td>
+            <td colspan="3" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">19</td>
+            <td style="text-align: center;">Lusail</td>
+            <td style="text-align: center;">261115</td>
+            <td style="text-align: center;">57</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">4.97</td>
+            <td style="text-align: center;">0.00%</td>
+            <td style="text-align: center;">11.91%</td>
+            <td style="text-align: center;">69.57%</td>
+            <td style="text-align: center;">18.52%</td>
+            <td colspan="2" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">20</td>
+            <td style="text-align: center;">Yas Marina</td>
+            <td style="text-align: center;">261122</td>
+            <td style="text-align: center;">58</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">5.05</td>
+            <td style="text-align: center;">0.00%</td>
+            <td style="text-align: center;">8.87%</td>
+            <td style="text-align: center;">66.86%</td>
+            <td style="text-align: center;">24.27%</td>
+            <td colspan="2" style="text-align: center;"></td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th rowspan="2" style="text-align: center;">Round</th>
+            <th rowspan="2" style="text-align: center;">Circuit</th>
+            <th rowspan="2" style="text-align: center;">Date</th>
+            <th rowspan="2" style="text-align: center;">Laps</th>
+            <th rowspan="2" style="text-align: center;">Profile</th>
+            <th rowspan="2" style="text-align: center;">eWC</th>
+            <th colspan="3" style="text-align: center;">WC Probability</th>
+        </tr>
+        <tr>
+            <th style="text-align: center;">0</th>
+            <th style="text-align: center;">1</th>
+            <th style="text-align: center;">2+</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: center;">PR1</td>
+            <td style="text-align: center;">Albert Park</td>
+            <td style="text-align: center;">260607</td>
+            <td style="text-align: center;">58</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">1.00</td>
+            <td style="text-align: center;">36.65%</td>
+            <td style="text-align: center;">38.81%</td>
+            <td style="text-align: center;">24.54%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">PR2</td>
+            <td style="text-align: center;">Shanghai</td>
+            <td style="text-align: center;">260614</td>
+            <td style="text-align: center;">56</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">0.96</td>
+            <td style="text-align: center;">38.34%</td>
+            <td style="text-align: center;">38.74%</td>
+            <td style="text-align: center;">22.92%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">PR3</td>
+            <td style="text-align: center;">Suzuka</td>
+            <td style="text-align: center;">260621</td>
+            <td style="text-align: center;">53</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">1.24</td>
+            <td style="text-align: center;">28.21%</td>
+            <td style="text-align: center;">38.16%</td>
+            <td style="text-align: center;">33.63%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">PR4</td>
+            <td style="text-align: center;">Sakhir</td>
+            <td style="text-align: center;">260628</td>
+            <td style="text-align: center;">57</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">0.36</td>
+            <td style="text-align: center;">69.85%</td>
+            <td style="text-align: center;">24.90%</td>
+            <td style="text-align: center;">5.25%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">Jeddah</td>
+            <td style="text-align: center;">260705</td>
+            <td style="text-align: center;">50</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">0.31</td>
+            <td style="text-align: center;">74.02%</td>
+            <td style="text-align: center;">22.18%</td>
+            <td style="text-align: center;">3.80%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">Miami</td>
+            <td style="text-align: center;">260712</td>
+            <td style="text-align: center;">57</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">0.98</td>
+            <td style="text-align: center;">37.49%</td>
+            <td style="text-align: center;">38.80%</td>
+            <td style="text-align: center;">23.71%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">3</td>
+            <td style="text-align: center;">Montreal</td>
+            <td style="text-align: center;">260719</td>
+            <td style="text-align: center;">70</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">1.26</td>
+            <td style="text-align: center;">25.13%</td>
+            <td style="text-align: center;">37.60%</td>
+            <td style="text-align: center;">37.27%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">4</td>
+            <td style="text-align: center;">Monte Carlo</td>
+            <td style="text-align: center;">260726</td>
+            <td style="text-align: center;">78</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">1.96</td>
+            <td style="text-align: center;">12.30%</td>
+            <td style="text-align: center;">26.68%</td>
+            <td style="text-align: center;">61.02%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">5</td>
+            <td style="text-align: center;">Barcelona</td>
+            <td style="text-align: center;">260802</td>
+            <td style="text-align: center;">66</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">0.43</td>
+            <td style="text-align: center;">64.91%</td>
+            <td style="text-align: center;">27.93%</td>
+            <td style="text-align: center;">7.16%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">6</td>
+            <td style="text-align: center;">Red Bull Ring</td>
+            <td style="text-align: center;">260809</td>
+            <td style="text-align: center;">71</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">0.47</td>
+            <td style="text-align: center;">62.13%</td>
+            <td style="text-align: center;">29.54%</td>
+            <td style="text-align: center;">8.33%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">7</td>
+            <td style="text-align: center;">Silverstone</td>
+            <td style="text-align: center;">260816</td>
+            <td style="text-align: center;">52</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">1.21</td>
+            <td style="text-align: center;">29.52%</td>
+            <td style="text-align: center;">38.31%</td>
+            <td style="text-align: center;">32.17%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">8</td>
+            <td style="text-align: center;">Spa</td>
+            <td style="text-align: center;">260823</td>
+            <td style="text-align: center;">44</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">0.99</td>
+            <td style="text-align: center;">37.64%</td>
+            <td style="text-align: center;">38.71%</td>
+            <td style="text-align: center;">23.65%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">9</td>
+            <td style="text-align: center;">Hungaroring</td>
+            <td style="text-align: center;">260906</td>
+            <td style="text-align: center;">70</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">1.26</td>
+            <td style="text-align: center;">25.13%</td>
+            <td style="text-align: center;">37.60%</td>
+            <td style="text-align: center;">37.27%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">10</td>
+            <td style="text-align: center;">Zandvoort</td>
+            <td style="text-align: center;">260913</td>
+            <td style="text-align: center;">72</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">1.31</td>
+            <td style="text-align: center;">23.82%</td>
+            <td style="text-align: center;">36.85%</td>
+            <td style="text-align: center;">39.33%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">11</td>
+            <td style="text-align: center;">Monza</td>
+            <td style="text-align: center;">260920</td>
+            <td style="text-align: center;">53</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">0.90</td>
+            <td style="text-align: center;">41.05%</td>
+            <td style="text-align: center;">38.45%</td>
+            <td style="text-align: center;">20.50%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">12</td>
+            <td style="text-align: center;">Madring</td>
+            <td style="text-align: center;">260927</td>
+            <td style="text-align: center;">57</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">0.36</td>
+            <td style="text-align: center;">69.85%</td>
+            <td style="text-align: center;">24.90%</td>
+            <td style="text-align: center;">5.25%</td>
+        </tr>
+        <tr style="font-weight: bold;">
+            <td style="text-align: center;">T13</td>
+            <td style="text-align: center;">Mandalika</td>
+            <td style="text-align: center;">261005</td>
+            <td style="text-align: center;">60</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">1.44</td>
+            <td style="text-align: center;">22.37%</td>
+            <td style="text-align: center;">35.80%</td>
+            <td style="text-align: center;">41.83%</td>
+        </tr>
+        <tr style="font-weight: bold;">
+            <td style="text-align: center;">D14</td>
+            <td style="text-align: center;">Marina Bay</td>
+            <td style="text-align: center;">261011</td>
+            <td style="text-align: center;">62</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">1.50</td>
+            <td style="text-align: center;">20.80%</td>
+            <td style="text-align: center;">34.82%</td>
+            <td style="text-align: center;">44.38%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">15</td>
+            <td style="text-align: center;">COTA</td>
+            <td style="text-align: center;">261018</td>
+            <td style="text-align: center;">56</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">0.96</td>
+            <td style="text-align: center;">38.34%</td>
+            <td style="text-align: center;">38.74%</td>
+            <td style="text-align: center;">22.92%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">16</td>
+            <td style="text-align: center;">Mexico City</td>
+            <td style="text-align: center;">261025</td>
+            <td style="text-align: center;">71</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">0.47</td>
+            <td style="text-align: center;">62.13%</td>
+            <td style="text-align: center;">29.54%</td>
+            <td style="text-align: center;">8.33%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">17</td>
+            <td style="text-align: center;">Interlagos</td>
+            <td style="text-align: center;">261101</td>
+            <td style="text-align: center;">71</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">1.76</td>
+            <td style="text-align: center;">15.54%</td>
+            <td style="text-align: center;">30.29%</td>
+            <td style="text-align: center;">54.17%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">18</td>
+            <td style="text-align: center;">Las Vegas</td>
+            <td style="text-align: center;">261108</td>
+            <td style="text-align: center;">50</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">0.31</td>
+            <td style="text-align: center;">74.02%</td>
+            <td style="text-align: center;">22.18%</td>
+            <td style="text-align: center;">3.80%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">19</td>
+            <td style="text-align: center;">Lusail</td>
+            <td style="text-align: center;">261115</td>
+            <td style="text-align: center;">57</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">0.36</td>
+            <td style="text-align: center;">69.85%</td>
+            <td style="text-align: center;">24.90%</td>
+            <td style="text-align: center;">5.25%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">20</td>
+            <td style="text-align: center;">Yas Marina</td>
+            <td style="text-align: center;">261122</td>
+            <td style="text-align: center;">58</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">0.37</td>
+            <td style="text-align: center;">69.04%</td>
+            <td style="text-align: center;">25.41%</td>
+            <td style="text-align: center;">5.55%</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th rowspan="2" style="text-align: center;">Round</th>
+            <th rowspan="2" style="text-align: center;">Circuit</th>
+            <th rowspan="2" style="text-align: center;">Date</th>
+            <th rowspan="2" style="text-align: center;">Laps</th>
+            <th rowspan="2" style="text-align: center;">Profile</th>
+            <th rowspan="2" style="text-align: center;">eWWC</th>
+            <th colspan="3" style="text-align: center;">WWC Probability</th>
+        </tr>
+        <tr>
+            <th style="text-align: center;">0</th>
+            <th style="text-align: center;">1</th>
+            <th style="text-align: center;">2+</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align: center;">PR1</td>
+            <td style="text-align: center;">Albert Park</td>
+            <td style="text-align: center;">260607</td>
+            <td style="text-align: center;">58</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">0.53</td>
+            <td style="text-align: center;">58.76%</td>
+            <td style="text-align: center;">32.54%</td>
+            <td style="text-align: center;">8.70%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">PR2</td>
+            <td style="text-align: center;">Shanghai</td>
+            <td style="text-align: center;">260614</td>
+            <td style="text-align: center;">56</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">0.51</td>
+            <td style="text-align: center;">60.03%</td>
+            <td style="text-align: center;">31.81%</td>
+            <td style="text-align: center;">8.16%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">PR3</td>
+            <td style="text-align: center;">Suzuka</td>
+            <td style="text-align: center;">260621</td>
+            <td style="text-align: center;">53</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">0.69</td>
+            <td style="text-align: center;">49.37%</td>
+            <td style="text-align: center;">36.31%</td>
+            <td style="text-align: center;">14.32%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">PR4</td>
+            <td style="text-align: center;">Sakhir</td>
+            <td style="text-align: center;">260628</td>
+            <td style="text-align: center;">57</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">0.20</td>
+            <td style="text-align: center;">81.93%</td>
+            <td style="text-align: center;">16.50%</td>
+            <td style="text-align: center;">1.57%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">Jeddah</td>
+            <td style="text-align: center;">260705</td>
+            <td style="text-align: center;">50</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">0.17</td>
+            <td style="text-align: center;">84.44%</td>
+            <td style="text-align: center;">14.41%</td>
+            <td style="text-align: center;">1.15%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">Miami</td>
+            <td style="text-align: center;">260712</td>
+            <td style="text-align: center;">57</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">0.52</td>
+            <td style="text-align: center;">59.39%</td>
+            <td style="text-align: center;">32.18%</td>
+            <td style="text-align: center;">8.43%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">3</td>
+            <td style="text-align: center;">Montreal</td>
+            <td style="text-align: center;">260719</td>
+            <td style="text-align: center;">70</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">0.64</td>
+            <td style="text-align: center;">52.33%</td>
+            <td style="text-align: center;">35.09%</td>
+            <td style="text-align: center;">12.58%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">4</td>
+            <td style="text-align: center;">Monte Carlo</td>
+            <td style="text-align: center;">260726</td>
+            <td style="text-align: center;">78</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">1.02</td>
+            <td style="text-align: center;">34.22%</td>
+            <td style="text-align: center;">39.02%</td>
+            <td style="text-align: center;">26.76%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">5</td>
+            <td style="text-align: center;">Barcelona</td>
+            <td style="text-align: center;">260802</td>
+            <td style="text-align: center;">66</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">0.23</td>
+            <td style="text-align: center;">79.11%</td>
+            <td style="text-align: center;">18.80%</td>
+            <td style="text-align: center;">2.09%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">6</td>
+            <td style="text-align: center;">Red Bull Ring</td>
+            <td style="text-align: center;">260809</td>
+            <td style="text-align: center;">71</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">0.25</td>
+            <td style="text-align: center;">77.49%</td>
+            <td style="text-align: center;">20.08%</td>
+            <td style="text-align: center;">2.43%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">7</td>
+            <td style="text-align: center;">Silverstone</td>
+            <td style="text-align: center;">260816</td>
+            <td style="text-align: center;">52</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">0.67</td>
+            <td style="text-align: center;">50.49%</td>
+            <td style="text-align: center;">35.91%</td>
+            <td style="text-align: center;">13.60%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">8</td>
+            <td style="text-align: center;">Spa</td>
+            <td style="text-align: center;">260823</td>
+            <td style="text-align: center;">44</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">0.57</td>
+            <td style="text-align: center;">56.40%</td>
+            <td style="text-align: center;">33.16%</td>
+            <td style="text-align: center;">10.44%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">9</td>
+            <td style="text-align: center;">Hungaroring</td>
+            <td style="text-align: center;">260906</td>
+            <td style="text-align: center;">70</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">0.64</td>
+            <td style="text-align: center;">52.33%</td>
+            <td style="text-align: center;">35.09%</td>
+            <td style="text-align: center;">12.58%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">10</td>
+            <td style="text-align: center;">Zandvoort</td>
+            <td style="text-align: center;">260913</td>
+            <td style="text-align: center;">72</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">0.66</td>
+            <td style="text-align: center;">51.52%</td>
+            <td style="text-align: center;">35.30%</td>
+            <td style="text-align: center;">13.18%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">11</td>
+            <td style="text-align: center;">Monza</td>
+            <td style="text-align: center;">260920</td>
+            <td style="text-align: center;">53</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">0.48</td>
+            <td style="text-align: center;">62.06%</td>
+            <td style="text-align: center;">30.59%</td>
+            <td style="text-align: center;">7.35%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">12</td>
+            <td style="text-align: center;">Madring</td>
+            <td style="text-align: center;">260927</td>
+            <td style="text-align: center;">57</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">0.20</td>
+            <td style="text-align: center;">81.93%</td>
+            <td style="text-align: center;">16.50%</td>
+            <td style="text-align: center;">1.57%</td>
+        </tr>
+        <tr style="font-weight: bold;">
+            <td style="text-align: center;">T13</td>
+            <td style="text-align: center;">Mandalika</td>
+            <td style="text-align: center;">261005</td>
+            <td style="text-align: center;">60</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">0.78</td>
+            <td style="text-align: center;">44.57%</td>
+            <td style="text-align: center;">37.60%</td>
+            <td style="text-align: center;">17.83%</td>
+        </tr>
+        <tr style="font-weight: bold;">
+            <td style="text-align: center;">D14</td>
+            <td style="text-align: center;">Marina Bay</td>
+            <td style="text-align: center;">261011</td>
+            <td style="text-align: center;">62</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">0.81</td>
+            <td style="text-align: center;">43.14%</td>
+            <td style="text-align: center;">37.84%</td>
+            <td style="text-align: center;">19.02%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">15</td>
+            <td style="text-align: center;">COTA</td>
+            <td style="text-align: center;">261018</td>
+            <td style="text-align: center;">56</td>
+            <td style="text-align: center;">1</td>
+            <td style="text-align: center;">0.51</td>
+            <td style="text-align: center;">60.03%</td>
+            <td style="text-align: center;">31.81%</td>
+            <td style="text-align: center;">8.16%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">16</td>
+            <td style="text-align: center;">Mexico City</td>
+            <td style="text-align: center;">261025</td>
+            <td style="text-align: center;">71</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">0.25</td>
+            <td style="text-align: center;">77.49%</td>
+            <td style="text-align: center;">20.08%</td>
+            <td style="text-align: center;">2.43%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">17</td>
+            <td style="text-align: center;">Interlagos</td>
+            <td style="text-align: center;">261101</td>
+            <td style="text-align: center;">71</td>
+            <td style="text-align: center;">2</td>
+            <td style="text-align: center;">0.92</td>
+            <td style="text-align: center;">38.31%</td>
+            <td style="text-align: center;">38.86%</td>
+            <td style="text-align: center;">22.83%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">18</td>
+            <td style="text-align: center;">Las Vegas</td>
+            <td style="text-align: center;">261108</td>
+            <td style="text-align: center;">50</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">0.17</td>
+            <td style="text-align: center;">84.44%</td>
+            <td style="text-align: center;">14.41%</td>
+            <td style="text-align: center;">1.15%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">19</td>
+            <td style="text-align: center;">Lusail</td>
+            <td style="text-align: center;">261115</td>
+            <td style="text-align: center;">57</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">0.20</td>
+            <td style="text-align: center;">81.93%</td>
+            <td style="text-align: center;">16.50%</td>
+            <td style="text-align: center;">1.57%</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">20</td>
+            <td style="text-align: center;">Yas Marina</td>
+            <td style="text-align: center;">261122</td>
+            <td style="text-align: center;">58</td>
+            <td style="text-align: center;">0</td>
+            <td style="text-align: center;">0.20</td>
+            <td style="text-align: center;">81.44%</td>
+            <td style="text-align: center;">16.90%</td>
+            <td style="text-align: center;">1.66%</td>
         </tr>
     </tbody>
 </table>
