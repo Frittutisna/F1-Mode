@@ -5,8 +5,8 @@
 2. **Format:** 1 annual season @ 20 rounds (races) @ ~50-70 songs (laps) @ 20 seconds ≈ ~60-75 minutes
 3. **Difficulty:** Applied if rolled as the first Roll 1
     * **Dry:** 60-100 Random
-    * 🟢 **Intermediate (I):** 50-80 Random
-    * 🔵 **Wet (W):** 40-60 Random
+    * 🟢 **Intermediate (I):** 50-100 Random
+    * 🔵 **Wet (W):** 40-100 Random
 
 ## II. Time
 Your goal is to have the lowest **Tally** at the end of the race to accumulate the most **Points**
