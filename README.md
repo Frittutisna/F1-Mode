@@ -231,7 +231,7 @@ Before each race, the Script will roll a set of three D20s to determine conditio
 After each lap, a [Dashboard](https://github.com/Frittutisna/F1-Mode/blob/main/Dashboard.png) link will be posted in the lobby chat to show the race situation for the next lap. You are strongly recommended to install the [AMQ Chat Plus](https://github.com/kempanator/amq-scripts/blob/main/amqChatPlus.user.js) script through TamperMonkey, then enable `Load Media in Chat` and set `Auto Load Media` to `All` in `Settings > Graphics` to view the Dashboard
 1. **Race Table:** Ordered from the lowest current Tally
     * **Position Column:** Green if you gained position(s) on the lap, vice versa for red
-    * **Constructor Identifier Column:** Two-letter abbreviation with team color, merged for Teammate DRS bonus and Double Stack risk
+    * **Constructor Identifier Column:** Two-letter abbreviation with team color, merged for Teammate DRS bonus and Double Stack danger
     * **Driver Name Column**
     * **Tyre Column:** Fill color if `Age ≤ Life`, outline and text color if `Age > Life`. Age next to Identifier (e.g., `S11` for 11-lap-old Softs), underlined text if `Age ≤ Bonus Window`
         * 🟠 Neutral (N)
