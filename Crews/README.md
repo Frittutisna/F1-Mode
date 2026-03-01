@@ -50,7 +50,7 @@ Your goal is to have the lowest **Tally** at the end of the race to accumulate t
     * **Sprint Points:** 3, 2, and 1 point for the Top 3 at the last lap before the first FSC of the race
     * **Race Points:** 12, 10, 8, 6, 4, 2, and 1 point for the Top 10 at the end of the race
     * **Fastest Lap Point:** 1 point for the driver with the fastest single Correct Answer Raw Time
-2. **Victory:** The team with the most total points at the end of the race is the winner. If tied, the team with the driver that wins the race is the winner
+2. **Victory:** The team with the most total points at the end of the race is the winner. If tied, the team with the race winner wins the round
 
 ## VI. Dashboard
 After each lap, a [Dashboard](https://github.com/Frittutisna/F1-Mode/blob/main/Crews/Dashboard.png) link will be posted in the lobby chat to show the race situation for the next lap. You are strongly recommended to install the [AMQ Chat Plus](https://github.com/kempanator/amq-scripts/blob/main/amqChatPlus.user.js) script through TamperMonkey, then enable `Load Media in Chat` and set `Auto Load Media` to `All` in `Settings > Graphics` to view the Dashboard
