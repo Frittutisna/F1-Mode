@@ -1,4 +1,4 @@
-# F1 Mode v0-concept.0.2
+# F1 Mode v0-concept.0.3
 
 ## I. Setup
 1. **Grid:** 10–20 players in teams of 2 playing separately
@@ -22,10 +22,10 @@ Your goal is to have the lowest **Tally** at the end of the race to accumulate t
 ## III. Pitstops and Tyres
 Pitting can be done manually during Dry weather or automatically during weather changes
 1. **Pitstops:**
-    * **How To:** Type `/f1 pit soft`, `/f1 pit medium`, or `/f1 pit hard` as your answer
+    * **How To:** Enter `/f1 pit soft`, `/f1 pit medium`, or `/f1 pit hard` in the chat box. This overrules any answer you entered for that lap
     * **Penalty:** Pitting counts as a Clean Time of **25s** normally, or **10s** under Virtual/Full Safety Car
     * **Limit:** 3 uses per race. While you may pit for the 4th time and/or more, doing so causes **Excess Pits** that treats your next Correct Answer as a Wrong/No Answer. Automatic pits during weather changes still count towards the Limit
-    * **Double Stack:** If teammates pit on the same lap and the trailing driver is less than 5s behind their teammate, they suffer a 5s penalty on their next Correct Answer
+    * **Double Stack:** If teammates pit on the same lap and the trailing driver is right behind (e.g., P3-P4), they suffer a 5s penalty on their next Correct Answer (e.g., 5s for P4)
 2. **Tyres:** Once `Age > Life`, `Penalty = Age - Life` for each lap thereafter
     * 🟠 **Neutral (N)**
         * **Role:** Default starting compound
@@ -141,10 +141,10 @@ Before each race, the Script will roll a set of three D20s to determine conditio
     * Less than 1s behind anyone (Proximity DRS)
     * More than multiples of 25s behind the leader (Perennial DRS; 75-100s behind the leader counts as 3s, etc)
     * Directly behind the teammate (Teammate DRS)
-* **Virtual Safety Car (VSC):** Triggered if everyone is **correct**. **Ignore the song** for everything except Tyre Age. Roll a D20 each lap to exit VSC within 5 laps: 1-10 ends it, 20 upgrades it to an FSC
+* **Virtual Safety Car (VSC):** Triggered if everyone is **correct**. **Ignore the song** for everything except Tyre Age and Pitstops. Roll a D20 each lap to exit VSC within 5 laps: 1-10 ends it, 20 upgrades it to an FSC
 * **Full Safety Car (FSC):** Triggered if everyone is **wrong** (Wrong/No Answers), or if the weather changed for the **worse** (from Dry or 🟢 Intermediate (I) to 🔵 Wet (W), or from Dry to 🟢 Intermediate (I)). **Reset the Tally** so that P2 is 0.5s behind P1, P3 is 0.5s behind P2, etc. The first race occurrence awards **Sprint Points**. Roll a D20 each lap after the first FSC lap to exit FSC within 5 laps (including potential preceding VSC): 1-5 ends it
 * **Did Not Finish (DNF):** Triggered if a **non-Lobby Host disconnected** and could not return within **5 minutes**. They are out of the race, though they keep their Sprint Points and/or Fastest Lap points, if any
-* **Red Flag:** Triggered if the **Lobby Host disconnected**. They must keep track of the newest Dashboard link after each lap, then award the following Race Points based on laps elapsed before the Red Flag. Fastest Lap and Sprint (if applicable) Points are unaffected by the Red Flag.
+* **Red Flag:** Triggered if the **Lobby Host disconnected**. They must keep track of the newest Dashboard link after each lap, then award the following Race Points based on laps elapsed before the Red Flag. Fastest Lap and Sprint (if applicable) Points are unaffected by the Red Flag
 <table>
     <thead>
         <tr>
@@ -228,10 +228,10 @@ Before each race, the Script will roll a set of three D20s to determine conditio
     * **World Constructor's Champion (WCC):** Team with the most combined points at the end of the season
 
 ## VII. Dashboard
-After each lap, a [Dashboard](https://github.com/Frittutisna/F1-Mode/blob/main/Dashboard/Dashboard.png) link will be posted in the lobby chat to show the race situation for the next lap. You are strongly recommended to install the [AMQ Chat Plus](https://github.com/kempanator/amq-scripts/blob/main/amqChatPlus.user.js) script through TamperMonkey, then enable `Load Media in Chat` and set `Auto Load Media` to `All` in `Settings > Graphics` to view the Dashboard
+After each lap, a [Dashboard](https://github.com/Frittutisna/F1-Mode/blob/main/Dashboard.png) link will be posted in the lobby chat to show the race situation for the next lap. You are strongly recommended to install the [AMQ Chat Plus](https://github.com/kempanator/amq-scripts/blob/main/amqChatPlus.user.js) script through TamperMonkey, then enable `Load Media in Chat` and set `Auto Load Media` to `All` in `Settings > Graphics` to view the Dashboard
 1. **Race Table:** Ordered from the lowest current Tally
     * **Position Column:** Green if you gained position(s) on the lap, vice versa for red
-    * **Constructor Identifier Column:** Two-letter abbreviation with team color, merged if teammates are next to each other indicating Teammate DRS bonus
+    * **Constructor Identifier Column:** Two-letter abbreviation with team color, merged for Teammate DRS bonus and Double Stack risk
     * **Driver Name Column**
     * **Tyre Column:** Fill color if `Age ≤ Life`, outline and text color if `Age > Life`. Age next to Identifier (e.g., `S11` for 11-lap-old Softs), underlined text if `Age ≤ Bonus Window`
         * 🟠 Neutral (N)
