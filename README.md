@@ -1,4 +1,4 @@
-# F1 Mode v0-concept.0.3.0
+# F1 Mode v0-concept.0.3
 
 ## I. Setup
 1. **Grid:** 10–20 players in teams of 2 playing separately
