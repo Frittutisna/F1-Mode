@@ -1,4 +1,4 @@
-# F1 Mode for Crews v0-concept.0.0
+# F1 Mode for Crews v0-alpha.0.0
 
 ## I. Setup
 1. **Grid:** 8 players in 2 teams of 4
