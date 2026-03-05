@@ -1,4 +1,4 @@
-# F1 Mode v0-concept.0.3
+# F1 Mode v0-concept.0.4
 
 ## I. Setup
 1. **Grid:** 10–20 players in teams of 2 playing separately
@@ -75,13 +75,13 @@ Before each race, the Script will roll a set of three D20s to determine conditio
             <td style="text-align: center;">1</td>
             <td rowspan="19" style="text-align: center;">Dry</td>
             <td rowspan="12" style="text-align: center;">Dry</td>
-            <td rowspan="12" style="text-align: center;">Intermediate</td>
-            <td rowspan="17" style="text-align: center;">Dry</td>
+            <td rowspan="18" style="text-align: center;">Intermediate</td>
+            <td rowspan="18" style="text-align: center;">Dry</td>
             <td rowspan="10" style="text-align: center;">Dry</td>
-            <td rowspan="10" style="text-align: center;">Intermediate</td>
-            <td rowspan="15" style="text-align: center;">Dry</td>
+            <td rowspan="15" style="text-align: center;">Intermediate</td>
+            <td rowspan="17" style="text-align: center;">Dry</td>
             <td rowspan="8" style="text-align: center;">Dry</td>
-            <td rowspan="8" style="text-align: center;">Intermediate</td>
+            <td rowspan="12" style="text-align: center;">Intermediate</td>
         </tr>
         <tr><td style="text-align: center;">2</td></tr>
         <tr><td style="text-align: center;">3</td></tr>
@@ -92,14 +92,12 @@ Before each race, the Script will roll a set of three D20s to determine conditio
         <tr><td style="text-align: center;">8</td></tr>
         <tr>
             <td style="text-align: center;">9</td>
-            <td rowspan="9" style="text-align: center;">Intermediate</td>
-            <td rowspan="12" style="text-align: center;">Wet</td>
+            <td rowspan="11" style="text-align: center;">Intermediate</td>
         </tr>
         <tr><td style="text-align: center;">10</td></tr>
         <tr>
             <td style="text-align: center;">11</td>
-            <td rowspan="8" style="text-align: center;">Intermediate</td>
-            <td rowspan="10" style="text-align: center;">Wet</td>
+            <td rowspan="9" style="text-align: center;">Intermediate</td>
         </tr>
         <tr><td style="text-align: center;">12</td></tr>
         <tr>
@@ -111,22 +109,24 @@ Before each race, the Script will roll a set of three D20s to determine conditio
         <tr><td style="text-align: center;">15</td></tr>
         <tr>
             <td style="text-align: center;">16</td>
-            <td rowspan="3" style="text-align: center;">Intermediate</td>
+            <td rowspan="5" style="text-align: center;">Wet</td>
         </tr>
         <tr><td style="text-align: center;">17</td></tr>
         <tr>
             <td style="text-align: center;">18</td>
             <td rowspan="2" style="text-align: center;">Intermediate</td>
-            <td rowspan="3" style="text-align: center;">Wet</td>
         </tr>
         <tr>
             <td style="text-align: center;">19</td>
             <td rowspan="2" style="text-align: center;">Wet</td>
-            <td rowspan="2" style="text-align: center;">Wet</td>
+            <td style="text-align: center;">Intermediate</td>
         </tr>
         <tr>
             <td style="text-align: center;">20</td>
             <td style="text-align: center;">Intermediate</td>
+            <td style="text-align: center;">Wet</td>
+            <td style="text-align: center;">Wet</td>
+            <td style="text-align: center;">Wet</td>
             <td style="text-align: center;">Wet</td>
             <td style="text-align: center;">Wet</td>
         </tr>
@@ -260,7 +260,7 @@ After each lap, a [Dashboard](https://github.com/Frittutisna/F1-Mode/blob/main/D
     * **Total Point (TP) Column**
 
 ## VIII. Calendar
-This table shows the provisional calendar for the inaugural 2026 season. Preseason (PR) races don't count towards the standings, while Triple (T) races count as three entries on the standings, and Double (D) races count as two
+This table shows the provisional calendar for the inaugural 2026 season. Preseason (PR) races don't count towards the standings, while Double (D) races double the points on offer
 1. **Expected Roll Count (eRC):** Expected amount of 3-roll sets (including one done before race start) for each race
 2. **Steady Race State (SRS):** Expected share of laps in each weather for each race
 3. **Expected Weather Change (eWC):** Expected amount of weather changes for each race
@@ -292,11 +292,11 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">58</td>
             <td style="text-align: center;">1</td>
             <td style="text-align: center;">5.05</td>
-            <td style="text-align: center;">75.19%</td>
-            <td style="text-align: center;">16.29%</td>
-            <td style="text-align: center;">8.52%</td>
-            <td style="text-align: center;">1.00</td>
-            <td style="text-align: center;">0.53</td>
+            <td style="text-align: center;">76.36%</td>
+            <td style="text-align: center;">16.46%</td>
+            <td style="text-align: center;">7.18%</td>
+            <td style="text-align: center;">0.90</td>
+            <td style="text-align: center;">0.34</td>
         </tr>
         <tr>
             <td style="text-align: center;">PR2</td>
@@ -305,11 +305,11 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">56</td>
             <td style="text-align: center;">1</td>
             <td style="text-align: center;">4.89</td>
-            <td style="text-align: center;">75.37%</td>
-            <td style="text-align: center;">16.18%</td>
-            <td style="text-align: center;">8.46%</td>
-            <td style="text-align: center;">0.96</td>
-            <td style="text-align: center;">0.51</td>
+            <td style="text-align: center;">76.31%</td>
+            <td style="text-align: center;">16.48%</td>
+            <td style="text-align: center;">7.21%</td>
+            <td style="text-align: center;">0.87</td>
+            <td style="text-align: center;">0.33</td>
         </tr>
         <tr>
             <td style="text-align: center;">PR3</td>
@@ -318,11 +318,11 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">53</td>
             <td style="text-align: center;">2</td>
             <td style="text-align: center;">4.65</td>
-            <td style="text-align: center;">59.55%</td>
-            <td style="text-align: center;">23.32%</td>
-            <td style="text-align: center;">17.13%</td>
-            <td style="text-align: center;">1.24</td>
-            <td style="text-align: center;">0.69</td>
+            <td style="text-align: center;">62.88%</td>
+            <td style="text-align: center;">27.03%</td>
+            <td style="text-align: center;">10.09%</td>
+            <td style="text-align: center;">1.02</td>
+            <td style="text-align: center;">0.39</td>
         </tr>
         <tr>
             <td style="text-align: center;">PR4</td>
@@ -331,9 +331,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">57</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">4.97</td>
-            <td style="text-align: center;">92.97%</td>
-            <td style="text-align: center;">6.68%</td>
-            <td style="text-align: center;">0.35%</td>
+            <td style="text-align: center;">92.99%</td>
+            <td style="text-align: center;">6.73%</td>
+            <td style="text-align: center;">0.28%</td>
             <td style="text-align: center;">0.36</td>
             <td style="text-align: center;">0.20</td>
         </tr>
@@ -344,9 +344,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">50</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">4.42</td>
-            <td style="text-align: center;">93.09%</td>
-            <td style="text-align: center;">6.58%</td>
-            <td style="text-align: center;">0.33%</td>
+            <td style="text-align: center;">93.11%</td>
+            <td style="text-align: center;">6.63%</td>
+            <td style="text-align: center;">0.26%</td>
             <td style="text-align: center;">0.31</td>
             <td style="text-align: center;">0.17</td>
         </tr>
@@ -357,11 +357,11 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">57</td>
             <td style="text-align: center;">1</td>
             <td style="text-align: center;">4.97</td>
-            <td style="text-align: center;">75.28%</td>
-            <td style="text-align: center;">16.24%</td>
-            <td style="text-align: center;">8.49%</td>
-            <td style="text-align: center;">0.98</td>
-            <td style="text-align: center;">0.52</td>
+            <td style="text-align: center;">76.34%</td>
+            <td style="text-align: center;">16.47%</td>
+            <td style="text-align: center;">7.19%</td>
+            <td style="text-align: center;">0.89</td>
+            <td style="text-align: center;">0.33</td>
         </tr>
         <tr>
             <td style="text-align: center;">3</td>
@@ -370,11 +370,11 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">70</td>
             <td style="text-align: center;">1</td>
             <td style="text-align: center;">5.99</td>
-            <td style="text-align: center;">74.25%</td>
-            <td style="text-align: center;">16.89%</td>
-            <td style="text-align: center;">8.86%</td>
-            <td style="text-align: center;">1.26</td>
-            <td style="text-align: center;">0.64</td>
+            <td style="text-align: center;">76.62%</td>
+            <td style="text-align: center;">16.35%</td>
+            <td style="text-align: center;">7.03%</td>
+            <td style="text-align: center;">1.10</td>
+            <td style="text-align: center;">0.42</td>
         </tr>
         <tr>
             <td style="text-align: center;">4</td>
@@ -383,11 +383,11 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">78</td>
             <td style="text-align: center;">2</td>
             <td style="text-align: center;">6.61</td>
-            <td style="text-align: center;">56.35%</td>
-            <td style="text-align: center;">25.00%</td>
-            <td style="text-align: center;">18.65%</td>
-            <td style="text-align: center;">1.96</td>
-            <td style="text-align: center;">1.02</td>
+            <td style="text-align: center;">63.98%</td>
+            <td style="text-align: center;">26.63%</td>
+            <td style="text-align: center;">9.39%</td>
+            <td style="text-align: center;">1.54</td>
+            <td style="text-align: center;">0.61</td>
         </tr>
         <tr>
             <td style="text-align: center;">5</td>
@@ -396,9 +396,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">66</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">5.67</td>
-            <td style="text-align: center;">92.82%</td>
-            <td style="text-align: center;">6.79%</td>
-            <td style="text-align: center;">0.39%</td>
+            <td style="text-align: center;">92.86%</td>
+            <td style="text-align: center;">6.84%</td>
+            <td style="text-align: center;">0.30%</td>
             <td style="text-align: center;">0.43</td>
             <td style="text-align: center;">0.23</td>
         </tr>
@@ -409,9 +409,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">71</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">6.07</td>
-            <td style="text-align: center;">92.76%</td>
-            <td style="text-align: center;">6.84%</td>
-            <td style="text-align: center;">0.40%</td>
+            <td style="text-align: center;">92.80%</td>
+            <td style="text-align: center;">6.89%</td>
+            <td style="text-align: center;">0.31%</td>
             <td style="text-align: center;">0.47</td>
             <td style="text-align: center;">0.25</td>
         </tr>
@@ -422,11 +422,11 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">52</td>
             <td style="text-align: center;">2</td>
             <td style="text-align: center;">4.58</td>
-            <td style="text-align: center;">59.72%</td>
-            <td style="text-align: center;">23.23%</td>
-            <td style="text-align: center;">17.04%</td>
-            <td style="text-align: center;">1.21</td>
-            <td style="text-align: center;">0.67</td>
+            <td style="text-align: center;">62.83%</td>
+            <td style="text-align: center;">27.05%</td>
+            <td style="text-align: center;">10.12%</td>
+            <td style="text-align: center;">1.00</td>
+            <td style="text-align: center;">0.38</td>
         </tr>
         <tr>
             <td style="text-align: center;">8</td>
@@ -435,11 +435,11 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">44</td>
             <td style="text-align: center;">2</td>
             <td style="text-align: center;">3.95</td>
-            <td style="text-align: center;">61.26%</td>
-            <td style="text-align: center;">22.42%</td>
-            <td style="text-align: center;">16.32%</td>
-            <td style="text-align: center;">0.99</td>
-            <td style="text-align: center;">0.57</td>
+            <td style="text-align: center;">62.32%</td>
+            <td style="text-align: center;">27.19%</td>
+            <td style="text-align: center;">10.49%</td>
+            <td style="text-align: center;">0.83</td>
+            <td style="text-align: center;">0.31</td>
         </tr>
         <tr>
             <td style="text-align: center;">9</td>
@@ -448,11 +448,11 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">70</td>
             <td style="text-align: center;">1</td>
             <td style="text-align: center;">5.99</td>
-            <td style="text-align: center;">74.25%</td>
-            <td style="text-align: center;">16.89%</td>
-            <td style="text-align: center;">8.86%</td>
-            <td style="text-align: center;">1.26</td>
-            <td style="text-align: center;">0.64</td>
+            <td style="text-align: center;">76.62%</td>
+            <td style="text-align: center;">16.35%</td>
+            <td style="text-align: center;">7.03%</td>
+            <td style="text-align: center;">1.10</td>
+            <td style="text-align: center;">0.42</td>
         </tr>
         <tr>
             <td style="text-align: center;">10</td>
@@ -461,11 +461,11 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">72</td>
             <td style="text-align: center;">1</td>
             <td style="text-align: center;">6.14</td>
-            <td style="text-align: center;">74.11%</td>
-            <td style="text-align: center;">16.98%</td>
-            <td style="text-align: center;">8.91%</td>
-            <td style="text-align: center;">1.31</td>
-            <td style="text-align: center;">0.66</td>
+            <td style="text-align: center;">76.65%</td>
+            <td style="text-align: center;">16.33%</td>
+            <td style="text-align: center;">7.01%</td>
+            <td style="text-align: center;">1.13</td>
+            <td style="text-align: center;">0.43</td>
         </tr>
         <tr>
             <td style="text-align: center;">11</td>
@@ -474,11 +474,11 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">53</td>
             <td style="text-align: center;">1</td>
             <td style="text-align: center;">4.65</td>
-            <td style="text-align: center;">75.65%</td>
-            <td style="text-align: center;">16.00%</td>
-            <td style="text-align: center;">8.35%</td>
-            <td style="text-align: center;">0.90</td>
-            <td style="text-align: center;">0.48</td>
+            <td style="text-align: center;">76.23%</td>
+            <td style="text-align: center;">16.51%</td>
+            <td style="text-align: center;">7.26%</td>
+            <td style="text-align: center;">0.82</td>
+            <td style="text-align: center;">0.31</td>
         </tr>
         <tr>
             <td style="text-align: center;">12</td>
@@ -487,24 +487,24 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">57</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">4.97</td>
-            <td style="text-align: center;">92.97%</td>
-            <td style="text-align: center;">6.68%</td>
-            <td style="text-align: center;">0.35%</td>
+            <td style="text-align: center;">92.99%</td>
+            <td style="text-align: center;">6.73%</td>
+            <td style="text-align: center;">0.28%</td>
             <td style="text-align: center;">0.36</td>
             <td style="text-align: center;">0.20</td>
         </tr>
         <tr style="font-weight: bold;">
-            <td style="text-align: center;">T13</td>
+            <td style="text-align: center;">D13</td>
             <td style="text-align: center;">Mandalika</td>
             <td style="text-align: center;">261005</td>
             <td style="text-align: center;">60</td>
             <td style="text-align: center;">2</td>
             <td style="text-align: center;">5.20</td>
-            <td style="text-align: center;">58.49%</td>
-            <td style="text-align: center;">23.88%</td>
-            <td style="text-align: center;">17.63%</td>
-            <td style="text-align: center;">1.44</td>
-            <td style="text-align: center;">0.78</td>
+            <td style="text-align: center;">63.24%</td>
+            <td style="text-align: center;">26.92%</td>
+            <td style="text-align: center;">9.84%</td>
+            <td style="text-align: center;">1.17</td>
+            <td style="text-align: center;">0.45</td>
         </tr>
         <tr style="font-weight: bold;">
             <td style="text-align: center;">D14</td>
@@ -513,11 +513,11 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">62</td>
             <td style="text-align: center;">2</td>
             <td style="text-align: center;">5.36</td>
-            <td style="text-align: center;">58.20%</td>
-            <td style="text-align: center;">24.03%</td>
-            <td style="text-align: center;">17.77%</td>
-            <td style="text-align: center;">1.50</td>
-            <td style="text-align: center;">0.81</td>
+            <td style="text-align: center;">63.34%</td>
+            <td style="text-align: center;">26.88%</td>
+            <td style="text-align: center;">9.78%</td>
+            <td style="text-align: center;">1.21</td>
+            <td style="text-align: center;">0.47</td>
         </tr>
         <tr>
             <td style="text-align: center;">15</td>
@@ -526,11 +526,11 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">56</td>
             <td style="text-align: center;">1</td>
             <td style="text-align: center;">4.89</td>
-            <td style="text-align: center;">75.37%</td>
-            <td style="text-align: center;">16.18%</td>
-            <td style="text-align: center;">8.46%</td>
-            <td style="text-align: center;">0.96</td>
-            <td style="text-align: center;">0.51</td>
+            <td style="text-align: center;">76.31%</td>
+            <td style="text-align: center;">16.48%</td>
+            <td style="text-align: center;">7.21%</td>
+            <td style="text-align: center;">0.87</td>
+            <td style="text-align: center;">0.33</td>
         </tr>
         <tr>
             <td style="text-align: center;">16</td>
@@ -539,9 +539,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">71</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">6.07</td>
-            <td style="text-align: center;">92.76%</td>
-            <td style="text-align: center;">6.84%</td>
-            <td style="text-align: center;">0.40%</td>
+            <td style="text-align: center;">92.80%</td>
+            <td style="text-align: center;">6.89%</td>
+            <td style="text-align: center;">0.31%</td>
             <td style="text-align: center;">0.47</td>
             <td style="text-align: center;">0.25</td>
         </tr>
@@ -552,11 +552,11 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">71</td>
             <td style="text-align: center;">2</td>
             <td style="text-align: center;">6.07</td>
-            <td style="text-align: center;">57.09%</td>
-            <td style="text-align: center;">24.61%</td>
-            <td style="text-align: center;">18.29%</td>
-            <td style="text-align: center;">1.76</td>
-            <td style="text-align: center;">0.92</td>
+            <td style="text-align: center;">63.72%</td>
+            <td style="text-align: center;">26.74%</td>
+            <td style="text-align: center;">9.54%</td>
+            <td style="text-align: center;">1.40</td>
+            <td style="text-align: center;">0.55</td>
         </tr>
         <tr>
             <td style="text-align: center;">18</td>
@@ -565,9 +565,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">50</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">4.42</td>
-            <td style="text-align: center;">93.09%</td>
-            <td style="text-align: center;">6.58%</td>
-            <td style="text-align: center;">0.33%</td>
+            <td style="text-align: center;">93.11%</td>
+            <td style="text-align: center;">6.63%</td>
+            <td style="text-align: center;">0.26%</td>
             <td style="text-align: center;">0.31</td>
             <td style="text-align: center;">0.17</td>
         </tr>
@@ -578,9 +578,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">57</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">4.97</td>
-            <td style="text-align: center;">92.97%</td>
-            <td style="text-align: center;">6.68%</td>
-            <td style="text-align: center;">0.35%</td>
+            <td style="text-align: center;">92.99%</td>
+            <td style="text-align: center;">6.73%</td>
+            <td style="text-align: center;">0.28%</td>
             <td style="text-align: center;">0.36</td>
             <td style="text-align: center;">0.20</td>
         </tr>
@@ -591,9 +591,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">58</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">5.05</td>
-            <td style="text-align: center;">92.95%</td>
-            <td style="text-align: center;">6.70%</td>
-            <td style="text-align: center;">0.36%</td>
+            <td style="text-align: center;">92.97%</td>
+            <td style="text-align: center;">6.74%</td>
+            <td style="text-align: center;">0.28%</td>
             <td style="text-align: center;">0.37</td>
             <td style="text-align: center;">0.20</td>
         </tr>
@@ -834,7 +834,7 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td colspan="2" style="text-align: center;"></td>
         </tr>
         <tr style="font-weight: bold;">
-            <td style="text-align: center;">T13</td>
+            <td style="text-align: center;">D13</td>
             <td style="text-align: center;">Mandalika</td>
             <td style="text-align: center;">261005</td>
             <td style="text-align: center;">60</td>
@@ -966,10 +966,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260607</td>
             <td style="text-align: center;">58</td>
             <td style="text-align: center;">1</td>
-            <td style="text-align: center;">1.00</td>
-            <td style="text-align: center;">36.65%</td>
-            <td style="text-align: center;">38.81%</td>
-            <td style="text-align: center;">24.54%</td>
+            <td style="text-align: center;">0.90</td>
+            <td style="text-align: center;">40.66%</td>
+            <td style="text-align: center;">36.59%</td>
+            <td style="text-align: center;">22.75%</td>
         </tr>
         <tr>
             <td style="text-align: center;">PR2</td>
@@ -977,10 +977,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260614</td>
             <td style="text-align: center;">56</td>
             <td style="text-align: center;">1</td>
-            <td style="text-align: center;">0.96</td>
-            <td style="text-align: center;">38.34%</td>
-            <td style="text-align: center;">38.74%</td>
-            <td style="text-align: center;">22.92%</td>
+            <td style="text-align: center;">0.87</td>
+            <td style="text-align: center;">41.90%</td>
+            <td style="text-align: center;">36.45%</td>
+            <td style="text-align: center;">21.65%</td>
         </tr>
         <tr>
             <td style="text-align: center;">PR3</td>
@@ -988,10 +988,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260621</td>
             <td style="text-align: center;">53</td>
             <td style="text-align: center;">2</td>
-            <td style="text-align: center;">1.24</td>
-            <td style="text-align: center;">28.21%</td>
-            <td style="text-align: center;">38.16%</td>
-            <td style="text-align: center;">33.63%</td>
+            <td style="text-align: center;">1.02</td>
+            <td style="text-align: center;">36.06%</td>
+            <td style="text-align: center;">36.78%</td>
+            <td style="text-align: center;">27.16%</td>
         </tr>
         <tr>
             <td style="text-align: center;">PR4</td>
@@ -1000,9 +1000,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">57</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">0.36</td>
-            <td style="text-align: center;">69.85%</td>
-            <td style="text-align: center;">24.90%</td>
-            <td style="text-align: center;">5.25%</td>
+            <td style="text-align: center;">69.77%</td>
+            <td style="text-align: center;">25.12%</td>
+            <td style="text-align: center;">5.11%</td>
         </tr>
         <tr>
             <td style="text-align: center;">1</td>
@@ -1011,9 +1011,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">50</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">0.31</td>
-            <td style="text-align: center;">74.02%</td>
-            <td style="text-align: center;">22.18%</td>
-            <td style="text-align: center;">3.80%</td>
+            <td style="text-align: center;">73.34%</td>
+            <td style="text-align: center;">22.74%</td>
+            <td style="text-align: center;">3.92%</td>
         </tr>
         <tr>
             <td style="text-align: center;">2</td>
@@ -1021,10 +1021,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260712</td>
             <td style="text-align: center;">57</td>
             <td style="text-align: center;">1</td>
-            <td style="text-align: center;">0.98</td>
-            <td style="text-align: center;">37.49%</td>
-            <td style="text-align: center;">38.80%</td>
-            <td style="text-align: center;">23.71%</td>
+            <td style="text-align: center;">0.89</td>
+            <td style="text-align: center;">41.07%</td>
+            <td style="text-align: center;">36.55%</td>
+            <td style="text-align: center;">22.38%</td>
         </tr>
         <tr>
             <td style="text-align: center;">3</td>
@@ -1032,10 +1032,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260719</td>
             <td style="text-align: center;">70</td>
             <td style="text-align: center;">1</td>
-            <td style="text-align: center;">1.26</td>
-            <td style="text-align: center;">25.13%</td>
-            <td style="text-align: center;">37.60%</td>
-            <td style="text-align: center;">37.27%</td>
+            <td style="text-align: center;">1.10</td>
+            <td style="text-align: center;">33.29%</td>
+            <td style="text-align: center;">36.62%</td>
+            <td style="text-align: center;">30.09%</td>
         </tr>
         <tr>
             <td style="text-align: center;">4</td>
@@ -1043,10 +1043,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260726</td>
             <td style="text-align: center;">78</td>
             <td style="text-align: center;">2</td>
-            <td style="text-align: center;">1.96</td>
-            <td style="text-align: center;">12.30%</td>
-            <td style="text-align: center;">26.68%</td>
-            <td style="text-align: center;">61.02%</td>
+            <td style="text-align: center;">1.54</td>
+            <td style="text-align: center;">21.44%</td>
+            <td style="text-align: center;">33.01%</td>
+            <td style="text-align: center;">45.55%</td>
         </tr>
         <tr>
             <td style="text-align: center;">5</td>
@@ -1055,9 +1055,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">66</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">0.43</td>
-            <td style="text-align: center;">64.91%</td>
-            <td style="text-align: center;">27.93%</td>
-            <td style="text-align: center;">7.16%</td>
+            <td style="text-align: center;">65.05%</td>
+            <td style="text-align: center;">27.97%</td>
+            <td style="text-align: center;">6.98%</td>
         </tr>
         <tr>
             <td style="text-align: center;">6</td>
@@ -1066,9 +1066,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">71</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">0.47</td>
-            <td style="text-align: center;">62.13%</td>
-            <td style="text-align: center;">29.54%</td>
-            <td style="text-align: center;">8.33%</td>
+            <td style="text-align: center;">62.50%</td>
+            <td style="text-align: center;">29.38%</td>
+            <td style="text-align: center;">8.12%</td>
         </tr>
         <tr>
             <td style="text-align: center;">7</td>
@@ -1076,10 +1076,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260816</td>
             <td style="text-align: center;">52</td>
             <td style="text-align: center;">2</td>
-            <td style="text-align: center;">1.21</td>
-            <td style="text-align: center;">29.52%</td>
-            <td style="text-align: center;">38.31%</td>
-            <td style="text-align: center;">32.17%</td>
+            <td style="text-align: center;">1.00</td>
+            <td style="text-align: center;">36.79%</td>
+            <td style="text-align: center;">36.79%</td>
+            <td style="text-align: center;">26.42%</td>
         </tr>
         <tr>
             <td style="text-align: center;">8</td>
@@ -1087,10 +1087,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260823</td>
             <td style="text-align: center;">44</td>
             <td style="text-align: center;">2</td>
-            <td style="text-align: center;">0.99</td>
-            <td style="text-align: center;">37.64%</td>
-            <td style="text-align: center;">38.71%</td>
-            <td style="text-align: center;">23.65%</td>
+            <td style="text-align: center;">0.83</td>
+            <td style="text-align: center;">43.60%</td>
+            <td style="text-align: center;">36.19%</td>
+            <td style="text-align: center;">20.21%</td>
         </tr>
         <tr>
             <td style="text-align: center;">9</td>
@@ -1098,10 +1098,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260906</td>
             <td style="text-align: center;">70</td>
             <td style="text-align: center;">1</td>
-            <td style="text-align: center;">1.26</td>
-            <td style="text-align: center;">25.13%</td>
-            <td style="text-align: center;">37.60%</td>
-            <td style="text-align: center;">37.27%</td>
+            <td style="text-align: center;">1.10</td>
+            <td style="text-align: center;">33.29%</td>
+            <td style="text-align: center;">36.62%</td>
+            <td style="text-align: center;">30.09%</td>
         </tr>
         <tr>
             <td style="text-align: center;">10</td>
@@ -1109,10 +1109,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260913</td>
             <td style="text-align: center;">72</td>
             <td style="text-align: center;">1</td>
-            <td style="text-align: center;">1.31</td>
-            <td style="text-align: center;">23.82%</td>
-            <td style="text-align: center;">36.85%</td>
-            <td style="text-align: center;">39.33%</td>
+            <td style="text-align: center;">1.13</td>
+            <td style="text-align: center;">32.30%</td>
+            <td style="text-align: center;">36.50%</td>
+            <td style="text-align: center;">31.20%</td>
         </tr>
         <tr>
             <td style="text-align: center;">11</td>
@@ -1120,10 +1120,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260920</td>
             <td style="text-align: center;">53</td>
             <td style="text-align: center;">1</td>
-            <td style="text-align: center;">0.90</td>
-            <td style="text-align: center;">41.05%</td>
-            <td style="text-align: center;">38.45%</td>
-            <td style="text-align: center;">20.50%</td>
+            <td style="text-align: center;">0.82</td>
+            <td style="text-align: center;">44.04%</td>
+            <td style="text-align: center;">36.11%</td>
+            <td style="text-align: center;">19.85%</td>
         </tr>
         <tr>
             <td style="text-align: center;">12</td>
@@ -1132,20 +1132,20 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">57</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">0.36</td>
-            <td style="text-align: center;">69.85%</td>
-            <td style="text-align: center;">24.90%</td>
-            <td style="text-align: center;">5.25%</td>
+            <td style="text-align: center;">69.77%</td>
+            <td style="text-align: center;">25.12%</td>
+            <td style="text-align: center;">5.11%</td>
         </tr>
         <tr style="font-weight: bold;">
-            <td style="text-align: center;">T13</td>
+            <td style="text-align: center;">D13</td>
             <td style="text-align: center;">Mandalika</td>
             <td style="text-align: center;">261005</td>
             <td style="text-align: center;">60</td>
             <td style="text-align: center;">2</td>
-            <td style="text-align: center;">1.44</td>
-            <td style="text-align: center;">22.37%</td>
-            <td style="text-align: center;">35.80%</td>
-            <td style="text-align: center;">41.83%</td>
+            <td style="text-align: center;">1.17</td>
+            <td style="text-align: center;">31.04%</td>
+            <td style="text-align: center;">36.31%</td>
+            <td style="text-align: center;">32.65%</td>
         </tr>
         <tr style="font-weight: bold;">
             <td style="text-align: center;">D14</td>
@@ -1153,10 +1153,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">261011</td>
             <td style="text-align: center;">62</td>
             <td style="text-align: center;">2</td>
-            <td style="text-align: center;">1.50</td>
-            <td style="text-align: center;">20.80%</td>
-            <td style="text-align: center;">34.82%</td>
-            <td style="text-align: center;">44.38%</td>
+            <td style="text-align: center;">1.21</td>
+            <td style="text-align: center;">29.82%</td>
+            <td style="text-align: center;">36.08%</td>
+            <td style="text-align: center;">34.10%</td>
         </tr>
         <tr>
             <td style="text-align: center;">15</td>
@@ -1164,10 +1164,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">261018</td>
             <td style="text-align: center;">56</td>
             <td style="text-align: center;">1</td>
-            <td style="text-align: center;">0.96</td>
-            <td style="text-align: center;">38.34%</td>
-            <td style="text-align: center;">38.74%</td>
-            <td style="text-align: center;">22.92%</td>
+            <td style="text-align: center;">0.87</td>
+            <td style="text-align: center;">41.90%</td>
+            <td style="text-align: center;">36.45%</td>
+            <td style="text-align: center;">21.65%</td>
         </tr>
         <tr>
             <td style="text-align: center;">16</td>
@@ -1176,9 +1176,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">71</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">0.47</td>
-            <td style="text-align: center;">62.13%</td>
-            <td style="text-align: center;">29.54%</td>
-            <td style="text-align: center;">8.33%</td>
+            <td style="text-align: center;">62.50%</td>
+            <td style="text-align: center;">29.38%</td>
+            <td style="text-align: center;">8.12%</td>
         </tr>
         <tr>
             <td style="text-align: center;">17</td>
@@ -1186,10 +1186,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">261101</td>
             <td style="text-align: center;">71</td>
             <td style="text-align: center;">2</td>
-            <td style="text-align: center;">1.76</td>
-            <td style="text-align: center;">15.54%</td>
-            <td style="text-align: center;">30.29%</td>
-            <td style="text-align: center;">54.17%</td>
+            <td style="text-align: center;">1.40</td>
+            <td style="text-align: center;">24.66%</td>
+            <td style="text-align: center;">34.52%</td>
+            <td style="text-align: center;">40.82%</td>
         </tr>
         <tr>
             <td style="text-align: center;">18</td>
@@ -1198,9 +1198,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">50</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">0.31</td>
-            <td style="text-align: center;">74.02%</td>
-            <td style="text-align: center;">22.18%</td>
-            <td style="text-align: center;">3.80%</td>
+            <td style="text-align: center;">73.34%</td>
+            <td style="text-align: center;">22.74%</td>
+            <td style="text-align: center;">3.92%</td>
         </tr>
         <tr>
             <td style="text-align: center;">19</td>
@@ -1209,9 +1209,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">57</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">0.36</td>
-            <td style="text-align: center;">69.85%</td>
-            <td style="text-align: center;">24.90%</td>
-            <td style="text-align: center;">5.25%</td>
+            <td style="text-align: center;">69.77%</td>
+            <td style="text-align: center;">25.12%</td>
+            <td style="text-align: center;">5.11%</td>
         </tr>
         <tr>
             <td style="text-align: center;">20</td>
@@ -1220,9 +1220,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">58</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">0.37</td>
-            <td style="text-align: center;">69.04%</td>
-            <td style="text-align: center;">25.41%</td>
-            <td style="text-align: center;">5.55%</td>
+            <td style="text-align: center;">69.07%</td>
+            <td style="text-align: center;">25.56%</td>
+            <td style="text-align: center;">5.37%</td>
         </tr>
     </tbody>
 </table>
@@ -1251,10 +1251,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260607</td>
             <td style="text-align: center;">58</td>
             <td style="text-align: center;">1</td>
-            <td style="text-align: center;">0.53</td>
-            <td style="text-align: center;">58.76%</td>
-            <td style="text-align: center;">32.54%</td>
-            <td style="text-align: center;">8.70%</td>
+            <td style="text-align: center;">0.34</td>
+            <td style="text-align: center;">71.18%</td>
+            <td style="text-align: center;">24.20%</td>
+            <td style="text-align: center;">4.62%</td>
         </tr>
         <tr>
             <td style="text-align: center;">PR2</td>
@@ -1262,10 +1262,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260614</td>
             <td style="text-align: center;">56</td>
             <td style="text-align: center;">1</td>
-            <td style="text-align: center;">0.51</td>
-            <td style="text-align: center;">60.03%</td>
-            <td style="text-align: center;">31.81%</td>
-            <td style="text-align: center;">8.16%</td>
+            <td style="text-align: center;">0.33</td>
+            <td style="text-align: center;">71.89%</td>
+            <td style="text-align: center;">23.72%</td>
+            <td style="text-align: center;">4.39%</td>
         </tr>
         <tr>
             <td style="text-align: center;">PR3</td>
@@ -1273,10 +1273,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260621</td>
             <td style="text-align: center;">53</td>
             <td style="text-align: center;">2</td>
-            <td style="text-align: center;">0.69</td>
-            <td style="text-align: center;">49.37%</td>
-            <td style="text-align: center;">36.31%</td>
-            <td style="text-align: center;">14.32%</td>
+            <td style="text-align: center;">0.39</td>
+            <td style="text-align: center;">67.71%</td>
+            <td style="text-align: center;">26.41%</td>
+            <td style="text-align: center;">5.88%</td>
         </tr>
         <tr>
             <td style="text-align: center;">PR4</td>
@@ -1285,9 +1285,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">57</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">0.20</td>
-            <td style="text-align: center;">81.93%</td>
-            <td style="text-align: center;">16.50%</td>
-            <td style="text-align: center;">1.57%</td>
+            <td style="text-align: center;">81.87%</td>
+            <td style="text-align: center;">16.37%</td>
+            <td style="text-align: center;">1.76%</td>
         </tr>
         <tr>
             <td style="text-align: center;">1</td>
@@ -1296,9 +1296,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">50</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">0.17</td>
-            <td style="text-align: center;">84.44%</td>
-            <td style="text-align: center;">14.41%</td>
-            <td style="text-align: center;">1.15%</td>
+            <td style="text-align: center;">84.37%</td>
+            <td style="text-align: center;">14.34%</td>
+            <td style="text-align: center;">1.29%</td>
         </tr>
         <tr>
             <td style="text-align: center;">2</td>
@@ -1306,10 +1306,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260712</td>
             <td style="text-align: center;">57</td>
             <td style="text-align: center;">1</td>
-            <td style="text-align: center;">0.52</td>
-            <td style="text-align: center;">59.39%</td>
-            <td style="text-align: center;">32.18%</td>
-            <td style="text-align: center;">8.43%</td>
+            <td style="text-align: center;">0.33</td>
+            <td style="text-align: center;">71.89%</td>
+            <td style="text-align: center;">23.72%</td>
+            <td style="text-align: center;">4.39%</td>
         </tr>
         <tr>
             <td style="text-align: center;">3</td>
@@ -1317,10 +1317,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260719</td>
             <td style="text-align: center;">70</td>
             <td style="text-align: center;">1</td>
-            <td style="text-align: center;">0.64</td>
-            <td style="text-align: center;">52.33%</td>
-            <td style="text-align: center;">35.09%</td>
-            <td style="text-align: center;">12.58%</td>
+            <td style="text-align: center;">0.42</td>
+            <td style="text-align: center;">65.70%</td>
+            <td style="text-align: center;">27.60%</td>
+            <td style="text-align: center;">6.70%</td>
         </tr>
         <tr>
             <td style="text-align: center;">4</td>
@@ -1328,10 +1328,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260726</td>
             <td style="text-align: center;">78</td>
             <td style="text-align: center;">2</td>
-            <td style="text-align: center;">1.02</td>
-            <td style="text-align: center;">34.22%</td>
-            <td style="text-align: center;">39.02%</td>
-            <td style="text-align: center;">26.76%</td>
+            <td style="text-align: center;">0.61</td>
+            <td style="text-align: center;">54.34%</td>
+            <td style="text-align: center;">33.14%</td>
+            <td style="text-align: center;">12.52%</td>
         </tr>
         <tr>
             <td style="text-align: center;">5</td>
@@ -1340,9 +1340,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">66</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">0.23</td>
-            <td style="text-align: center;">79.11%</td>
-            <td style="text-align: center;">18.80%</td>
-            <td style="text-align: center;">2.09%</td>
+            <td style="text-align: center;">79.45%</td>
+            <td style="text-align: center;">18.27%</td>
+            <td style="text-align: center;">2.28%</td>
         </tr>
         <tr>
             <td style="text-align: center;">6</td>
@@ -1351,9 +1351,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">71</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">0.25</td>
-            <td style="text-align: center;">77.49%</td>
-            <td style="text-align: center;">20.08%</td>
-            <td style="text-align: center;">2.43%</td>
+            <td style="text-align: center;">77.88%</td>
+            <td style="text-align: center;">19.47%</td>
+            <td style="text-align: center;">2.65%</td>
         </tr>
         <tr>
             <td style="text-align: center;">7</td>
@@ -1361,10 +1361,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260816</td>
             <td style="text-align: center;">52</td>
             <td style="text-align: center;">2</td>
-            <td style="text-align: center;">0.67</td>
-            <td style="text-align: center;">50.49%</td>
-            <td style="text-align: center;">35.91%</td>
-            <td style="text-align: center;">13.60%</td>
+            <td style="text-align: center;">0.38</td>
+            <td style="text-align: center;">68.39%</td>
+            <td style="text-align: center;">25.99%</td>
+            <td style="text-align: center;">5.62%</td>
         </tr>
         <tr>
             <td style="text-align: center;">8</td>
@@ -1372,10 +1372,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260823</td>
             <td style="text-align: center;">44</td>
             <td style="text-align: center;">2</td>
-            <td style="text-align: center;">0.57</td>
-            <td style="text-align: center;">56.40%</td>
-            <td style="text-align: center;">33.16%</td>
-            <td style="text-align: center;">10.44%</td>
+            <td style="text-align: center;">0.31</td>
+            <td style="text-align: center;">73.34%</td>
+            <td style="text-align: center;">22.74%</td>
+            <td style="text-align: center;">3.92%</td>
         </tr>
         <tr>
             <td style="text-align: center;">9</td>
@@ -1383,10 +1383,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260906</td>
             <td style="text-align: center;">70</td>
             <td style="text-align: center;">1</td>
-            <td style="text-align: center;">0.64</td>
-            <td style="text-align: center;">52.33%</td>
-            <td style="text-align: center;">35.09%</td>
-            <td style="text-align: center;">12.58%</td>
+            <td style="text-align: center;">0.42</td>
+            <td style="text-align: center;">65.70%</td>
+            <td style="text-align: center;">27.60%</td>
+            <td style="text-align: center;">6.70%</td>
         </tr>
         <tr>
             <td style="text-align: center;">10</td>
@@ -1394,10 +1394,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260913</td>
             <td style="text-align: center;">72</td>
             <td style="text-align: center;">1</td>
-            <td style="text-align: center;">0.66</td>
-            <td style="text-align: center;">51.52%</td>
-            <td style="text-align: center;">35.30%</td>
-            <td style="text-align: center;">13.18%</td>
+            <td style="text-align: center;">0.43</td>
+            <td style="text-align: center;">65.05%</td>
+            <td style="text-align: center;">27.97%</td>
+            <td style="text-align: center;">6.98%</td>
         </tr>
         <tr>
             <td style="text-align: center;">11</td>
@@ -1405,10 +1405,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">260920</td>
             <td style="text-align: center;">53</td>
             <td style="text-align: center;">1</td>
-            <td style="text-align: center;">0.48</td>
-            <td style="text-align: center;">62.06%</td>
-            <td style="text-align: center;">30.59%</td>
-            <td style="text-align: center;">7.35%</td>
+            <td style="text-align: center;">0.31</td>
+            <td style="text-align: center;">73.34%</td>
+            <td style="text-align: center;">22.74%</td>
+            <td style="text-align: center;">3.92%</td>
         </tr>
         <tr>
             <td style="text-align: center;">12</td>
@@ -1417,20 +1417,20 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">57</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">0.20</td>
-            <td style="text-align: center;">81.93%</td>
-            <td style="text-align: center;">16.50%</td>
-            <td style="text-align: center;">1.57%</td>
+            <td style="text-align: center;">81.87%</td>
+            <td style="text-align: center;">16.37%</td>
+            <td style="text-align: center;">1.76%</td>
         </tr>
         <tr style="font-weight: bold;">
-            <td style="text-align: center;">T13</td>
+            <td style="text-align: center;">D13</td>
             <td style="text-align: center;">Mandalika</td>
             <td style="text-align: center;">261005</td>
             <td style="text-align: center;">60</td>
             <td style="text-align: center;">2</td>
-            <td style="text-align: center;">0.78</td>
-            <td style="text-align: center;">44.57%</td>
-            <td style="text-align: center;">37.60%</td>
-            <td style="text-align: center;">17.83%</td>
+            <td style="text-align: center;">0.45</td>
+            <td style="text-align: center;">63.76%</td>
+            <td style="text-align: center;">28.69%</td>
+            <td style="text-align: center;">7.55%</td>
         </tr>
         <tr style="font-weight: bold;">
             <td style="text-align: center;">D14</td>
@@ -1438,10 +1438,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">261011</td>
             <td style="text-align: center;">62</td>
             <td style="text-align: center;">2</td>
-            <td style="text-align: center;">0.81</td>
-            <td style="text-align: center;">43.14%</td>
-            <td style="text-align: center;">37.84%</td>
-            <td style="text-align: center;">19.02%</td>
+            <td style="text-align: center;">0.47</td>
+            <td style="text-align: center;">62.50%</td>
+            <td style="text-align: center;">29.38%</td>
+            <td style="text-align: center;">8.12%</td>
         </tr>
         <tr>
             <td style="text-align: center;">15</td>
@@ -1449,10 +1449,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">261018</td>
             <td style="text-align: center;">56</td>
             <td style="text-align: center;">1</td>
-            <td style="text-align: center;">0.51</td>
-            <td style="text-align: center;">60.03%</td>
-            <td style="text-align: center;">31.81%</td>
-            <td style="text-align: center;">8.16%</td>
+            <td style="text-align: center;">0.33</td>
+            <td style="text-align: center;">71.89%</td>
+            <td style="text-align: center;">23.72%</td>
+            <td style="text-align: center;">4.39%</td>
         </tr>
         <tr>
             <td style="text-align: center;">16</td>
@@ -1461,9 +1461,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">71</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">0.25</td>
-            <td style="text-align: center;">77.49%</td>
-            <td style="text-align: center;">20.08%</td>
-            <td style="text-align: center;">2.43%</td>
+            <td style="text-align: center;">77.88%</td>
+            <td style="text-align: center;">19.47%</td>
+            <td style="text-align: center;">2.65%</td>
         </tr>
         <tr>
             <td style="text-align: center;">17</td>
@@ -1471,10 +1471,10 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">261101</td>
             <td style="text-align: center;">71</td>
             <td style="text-align: center;">2</td>
-            <td style="text-align: center;">0.92</td>
-            <td style="text-align: center;">38.31%</td>
-            <td style="text-align: center;">38.86%</td>
-            <td style="text-align: center;">22.83%</td>
+            <td style="text-align: center;">0.55</td>
+            <td style="text-align: center;">57.69%</td>
+            <td style="text-align: center;">31.73%</td>
+            <td style="text-align: center;">10.58%</td>
         </tr>
         <tr>
             <td style="text-align: center;">18</td>
@@ -1483,9 +1483,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">50</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">0.17</td>
-            <td style="text-align: center;">84.44%</td>
-            <td style="text-align: center;">14.41%</td>
-            <td style="text-align: center;">1.15%</td>
+            <td style="text-align: center;">84.37%</td>
+            <td style="text-align: center;">14.34%</td>
+            <td style="text-align: center;">1.29%</td>
         </tr>
         <tr>
             <td style="text-align: center;">19</td>
@@ -1494,9 +1494,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">57</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">0.20</td>
-            <td style="text-align: center;">81.93%</td>
-            <td style="text-align: center;">16.50%</td>
-            <td style="text-align: center;">1.57%</td>
+            <td style="text-align: center;">81.87%</td>
+            <td style="text-align: center;">16.37%</td>
+            <td style="text-align: center;">1.76%</td>
         </tr>
         <tr>
             <td style="text-align: center;">20</td>
@@ -1505,9 +1505,9 @@ This table shows the provisional calendar for the inaugural 2026 season. Preseas
             <td style="text-align: center;">58</td>
             <td style="text-align: center;">0</td>
             <td style="text-align: center;">0.20</td>
-            <td style="text-align: center;">81.44%</td>
-            <td style="text-align: center;">16.90%</td>
-            <td style="text-align: center;">1.66%</td>
+            <td style="text-align: center;">81.87%</td>
+            <td style="text-align: center;">16.37%</td>
+            <td style="text-align: center;">1.76%</td>
         </tr>
     </tbody>
 </table>
